@@ -1,0 +1,722 @@
+2D Click to Move in Unity
+https://youtu.be/lCfoU1WoOhI
+
+1
+00:00:00,719 --> 00:00:02,399
+what is up fellow game developers my
+
+2
+00:00:02,399 --> 00:00:04,400
+name is tyler parts and welcome back
+
+3
+00:00:04,400 --> 00:00:06,560
+to the tyler podge channel where today
+
+4
+00:00:06,560 --> 00:00:08,400
+we are going to be creating a
+
+5
+00:00:08,400 --> 00:00:12,639
+tap to or tut click to move game in 2d
+
+6
+00:00:12,639 --> 00:00:14,559
+so first thing we'll do is open up unity
+
+7
+00:00:14,559 --> 00:00:19,439
+hub using uh unity 2019.3.9 f1
+
+8
+00:00:19,439 --> 00:00:21,119
+and we're going to select 2d and i'm
+
+9
+00:00:21,119 --> 00:00:22,800
+just going to call this
+
+10
+00:00:22,800 --> 00:00:26,160
+uh click to move
+
+11
+00:00:26,160 --> 00:00:28,400
+click create and that is going to open
+
+12
+00:00:28,400 --> 00:00:30,800
+up unity for us so i will see you once
+
+13
+00:00:30,800 --> 00:00:31,359
+it has
+
+14
+00:00:31,359 --> 00:00:33,840
+loaded
+
+15
+00:00:36,480 --> 00:00:40,000
+okay so unity has now opened and we are
+
+16
+00:00:40,000 --> 00:00:42,000
+left with the sample scene now this is
+
+17
+00:00:42,000 --> 00:00:42,559
+perfect
+
+18
+00:00:42,559 --> 00:00:44,719
+all we need to do is in the bottom right
+
+19
+00:00:44,719 --> 00:00:45,920
+right click
+
+20
+00:00:45,920 --> 00:00:47,520
+create a sprite and i'm going to create
+
+21
+00:00:47,520 --> 00:00:50,160
+a so i create a hexagon i was supposed
+
+22
+00:00:50,160 --> 00:00:51,520
+to create a circle but we're now going
+
+23
+00:00:51,520 --> 00:00:52,879
+with hexagon because it's what i
+
+24
+00:00:52,879 --> 00:00:54,480
+accidentally created
+
+25
+00:00:54,480 --> 00:00:56,079
+you can use any sprite it doesn't have
+
+26
+00:00:56,079 --> 00:00:57,760
+to be a
+
+27
+00:00:57,760 --> 00:01:00,480
+hexagon and let's just drop this into
+
+28
+00:01:00,480 --> 00:01:01,199
+our scene
+
+29
+00:01:01,199 --> 00:01:04,479
+let's just drop him at zero zero
+
+30
+00:01:04,479 --> 00:01:06,960
+and there we go so now it has been
+
+31
+00:01:06,960 --> 00:01:08,240
+dropped in
+
+32
+00:01:08,240 --> 00:01:11,840
+we are now going to basically
+
+33
+00:01:11,840 --> 00:01:13,840
+just i'm going to rename it to player
+
+34
+00:01:13,840 --> 00:01:15,200
+because it will be our player we're
+
+35
+00:01:15,200 --> 00:01:15,920
+moving
+
+36
+00:01:15,920 --> 00:01:17,840
+or you could have units you're moving or
+
+37
+00:01:17,840 --> 00:01:19,520
+anything you want to move
+
+38
+00:01:19,520 --> 00:01:20,640
+for now we're going to click add
+
+39
+00:01:20,640 --> 00:01:23,759
+component i'm going to call this
+
+40
+00:01:23,759 --> 00:01:27,759
+um well rigid body 2d
+
+41
+00:01:27,759 --> 00:01:30,079
+gravity scale 0 and collision to
+
+42
+00:01:30,079 --> 00:01:31,840
+continuous again we don't actually need
+
+43
+00:01:31,840 --> 00:01:33,360
+this for this tutorial but it's sank
+
+44
+00:01:33,360 --> 00:01:35,119
+you'll probably be adding anyway
+
+45
+00:01:35,119 --> 00:01:38,840
+let's add a component and call it player
+
+46
+00:01:38,840 --> 00:01:41,840
+movement
+
+47
+00:01:41,920 --> 00:01:44,079
+hit enter create a new script and click
+
+48
+00:01:44,079 --> 00:01:45,600
+create and add now this
+
+49
+00:01:45,600 --> 00:01:47,840
+creates a new script once unity compiles
+
+50
+00:01:47,840 --> 00:01:48,960
+this script
+
+51
+00:01:48,960 --> 00:01:50,640
+we'll be able to open it up in visual
+
+52
+00:01:50,640 --> 00:01:55,200
+studio code so if i double click this
+
+53
+00:01:55,200 --> 00:01:57,520
+here we are we now have official studio
+
+54
+00:01:57,520 --> 00:02:01,360
+code open i'll zoom in a little
+
+55
+00:02:02,399 --> 00:02:04,079
+um and what we're going to do is we're
+
+56
+00:02:04,079 --> 00:02:06,479
+going to remove everything in here
+
+57
+00:02:06,479 --> 00:02:08,560
+we're going to put this back and this
+
+58
+00:02:08,560 --> 00:02:10,239
+script is fairly simple we give
+
+59
+00:02:10,239 --> 00:02:13,040
+our player a speed which i'm going to
+
+60
+00:02:13,040 --> 00:02:15,599
+set to 10 f this is how fast we move
+
+61
+00:02:15,599 --> 00:02:17,520
+towards the mouse or the position we
+
+62
+00:02:17,520 --> 00:02:20,319
+clicked we then need a vector 2
+
+63
+00:02:20,319 --> 00:02:23,360
+called last clicked or
+
+64
+00:02:23,360 --> 00:02:26,720
+last clicked position
+
+65
+00:02:26,720 --> 00:02:29,760
+we then need a boolean called moving um
+
+66
+00:02:29,760 --> 00:02:31,920
+which obviously will define whether we
+
+67
+00:02:31,920 --> 00:02:34,000
+are moving or not moving
+
+68
+00:02:34,000 --> 00:02:35,840
+lastly we need to open up the update
+
+69
+00:02:35,840 --> 00:02:37,440
+method we need to create an
+
+70
+00:02:37,440 --> 00:02:40,560
+if input
+
+71
+00:02:40,560 --> 00:02:43,519
+dot get mouse button down and we're
+
+72
+00:02:43,519 --> 00:02:45,040
+going to pass through 0 which
+
+73
+00:02:45,040 --> 00:02:47,200
+is our left mouse button we're then
+
+74
+00:02:47,200 --> 00:02:49,360
+going to say last clicked position is
+
+75
+00:02:49,360 --> 00:02:50,400
+equal to
+
+76
+00:02:50,400 --> 00:02:55,120
+camera dot main dot world or screen
+
+77
+00:02:55,120 --> 00:02:58,000
+to world point and we're going to pass
+
+78
+00:02:58,000 --> 00:02:58,640
+through
+
+79
+00:02:58,640 --> 00:03:01,840
+input if i can
+
+80
+00:03:01,840 --> 00:03:05,840
+input dot mouse
+
+81
+00:03:07,040 --> 00:03:10,959
+position if i can spell and there we go
+
+82
+00:03:10,959 --> 00:03:12,400
+simple as that we don't want to say
+
+83
+00:03:12,400 --> 00:03:14,640
+moving is equal to true
+
+84
+00:03:14,640 --> 00:03:17,680
+we're then going to say if moving
+
+85
+00:03:17,680 --> 00:03:20,159
+and then we're going to say and
+
+86
+00:03:20,159 --> 00:03:21,680
+transform
+
+87
+00:03:21,680 --> 00:03:25,280
+dot position we need to cast this as a
+
+88
+00:03:25,280 --> 00:03:26,080
+vector 2
+
+89
+00:03:26,080 --> 00:03:27,519
+because as we'll get an error saying you
+
+90
+00:03:27,519 --> 00:03:30,480
+can't confirm it it's not equal to
+
+91
+00:03:30,480 --> 00:03:33,599
+last clicked position so basically we're
+
+92
+00:03:33,599 --> 00:03:34,799
+just saying
+
+93
+00:03:34,799 --> 00:03:38,480
+if we if we're moving and our
+
+94
+00:03:38,480 --> 00:03:40,560
+and we're not um at the same position as
+
+95
+00:03:40,560 --> 00:03:42,000
+where we clicked
+
+96
+00:03:42,000 --> 00:03:43,519
+um we're then going to move so we're
+
+97
+00:03:43,519 --> 00:03:46,480
+going to say
+
+98
+00:03:46,480 --> 00:03:50,080
+uh step float called step which will be
+
+99
+00:03:50,080 --> 00:03:53,840
+our um speed times by time dot
+
+100
+00:03:53,840 --> 00:03:56,720
+delta time which means we'll only move
+
+101
+00:03:56,720 --> 00:03:57,040
+uh
+
+102
+00:03:57,040 --> 00:03:59,280
+it basically means we if our computer is
+
+103
+00:03:59,280 --> 00:04:00,879
+running at 10 frames per second
+
+104
+00:04:00,879 --> 00:04:04,000
+we will only be moving our speed by 10
+
+105
+00:04:04,000 --> 00:04:05,519
+frames or not by 10 volts
+
+106
+00:04:05,519 --> 00:04:08,640
+we'll basically be creating a delta time
+
+107
+00:04:08,640 --> 00:04:11,920
+obviously which means per
+
+108
+00:04:11,920 --> 00:04:15,439
+frame it gets a time between the frames
+
+109
+00:04:15,439 --> 00:04:17,279
+and it multiplies it by that which means
+
+110
+00:04:17,279 --> 00:04:18,880
+we're not if we if we have a slower
+
+111
+00:04:18,880 --> 00:04:20,639
+computer we won't be moving faster
+
+112
+00:04:20,639 --> 00:04:22,079
+because we have a slower computer we'll
+
+113
+00:04:22,079 --> 00:04:24,400
+be moving at the same speed
+
+114
+00:04:24,400 --> 00:04:28,320
+um and then we can now say transform
+
+115
+00:04:28,320 --> 00:04:31,680
+dot position is equal to a
+
+116
+00:04:31,680 --> 00:04:34,800
+a vector2 dot
+
+117
+00:04:34,800 --> 00:04:37,680
+move towards and we're going to say
+
+118
+00:04:37,680 --> 00:04:38,960
+transform
+
+119
+00:04:38,960 --> 00:04:43,840
+dot or transform transform
+
+120
+00:04:44,000 --> 00:04:45,440
+that's our first parameter so we're
+
+121
+00:04:45,440 --> 00:04:47,199
+saying where we are we're going to say
+
+122
+00:04:47,199 --> 00:04:49,600
+last clicked position is to where we're
+
+123
+00:04:49,600 --> 00:04:50,720
+aiming to go and then we're going to
+
+124
+00:04:50,720 --> 00:04:52,639
+pass through our step
+
+125
+00:04:52,639 --> 00:04:55,600
+um which is perfect and then we need to
+
+126
+00:04:55,600 --> 00:04:57,280
+do an else on this and say
+
+127
+00:04:57,280 --> 00:05:00,639
+moving is equal to false
+
+128
+00:05:00,639 --> 00:05:04,080
+so what we're saying here is if we are
+
+129
+00:05:04,080 --> 00:05:06,479
+moving and we're not equal to our last
+
+130
+00:05:06,479 --> 00:05:08,000
+clicked position
+
+131
+00:05:08,000 --> 00:05:09,919
+we're going to move towards the last
+
+132
+00:05:09,919 --> 00:05:11,520
+click position else
+
+133
+00:05:11,520 --> 00:05:13,199
+we're just going to we're not going to
+
+134
+00:05:13,199 --> 00:05:14,720
+be moving anymore so that means we've
+
+135
+00:05:14,720 --> 00:05:16,000
+either made it to our last click
+
+136
+00:05:16,000 --> 00:05:16,880
+position
+
+137
+00:05:16,880 --> 00:05:19,600
+or we're no longer moving which is fine
+
+138
+00:05:19,600 --> 00:05:22,000
+so if we go back to unity now
+
+139
+00:05:22,000 --> 00:05:25,199
+and we click play you'll now see
+
+140
+00:05:25,199 --> 00:05:28,800
+we move to wherever we click
+
+141
+00:05:28,800 --> 00:05:30,720
+which is perfect so now we'll forever be
+
+142
+00:05:30,720 --> 00:05:33,039
+moving
+
+143
+00:05:33,039 --> 00:05:38,479
+to where we're clicking
+
+144
+00:05:38,479 --> 00:05:40,960
+as you can see we can click anywhere we
+
+145
+00:05:40,960 --> 00:05:42,320
+can even click
+
+146
+00:05:42,320 --> 00:05:46,000
+midway to change its direction
+
+147
+00:05:46,240 --> 00:05:47,919
+and if you wanted to you could actually
+
+148
+00:05:47,919 --> 00:05:49,600
+set up an array of these
+
+149
+00:05:49,600 --> 00:05:51,199
+um so if you click here and then click
+
+150
+00:05:51,199 --> 00:05:52,720
+there it won't automatically change your
+
+151
+00:05:52,720 --> 00:05:54,160
+way until it gets to point one
+
+152
+00:05:54,160 --> 00:05:55,520
+then move to point two you can go click
+
+153
+00:05:55,520 --> 00:05:57,440
+click click and it will move to each one
+
+154
+00:05:57,440 --> 00:05:59,360
+first before it then
+
+155
+00:05:59,360 --> 00:06:01,520
+um stops which is you do an array and
+
+156
+00:06:01,520 --> 00:06:03,120
+you loop through the first index or
+
+157
+00:06:03,120 --> 00:06:04,800
+array once you've got to the first
+
+158
+00:06:04,800 --> 00:06:07,199
+index of the array you remove it you
+
+159
+00:06:07,199 --> 00:06:08,639
+then check again you
+
+160
+00:06:08,639 --> 00:06:10,400
+go for the second one blah blah all the
+
+161
+00:06:10,400 --> 00:06:13,039
+way down until you get to your position
+
+162
+00:06:13,039 --> 00:06:14,000
+but we're not going to be doing that in
+
+163
+00:06:14,000 --> 00:06:15,680
+that video this is all we're doing in
+
+164
+00:06:15,680 --> 00:06:17,120
+this video because it is a simple
+
+165
+00:06:17,120 --> 00:06:19,680
+click to move tutorial if you would like
+
+166
+00:06:19,680 --> 00:06:20,240
+to see
+
+167
+00:06:20,240 --> 00:06:22,080
+touch controls on this which is very
+
+168
+00:06:22,080 --> 00:06:24,240
+straightforward um i'll happily
+
+169
+00:06:24,240 --> 00:06:26,800
+do a mobile touch control so you can see
+
+170
+00:06:26,800 --> 00:06:28,080
+how it works
+
+171
+00:06:28,080 --> 00:06:30,400
+um on a phone so you can touch to move
+
+172
+00:06:30,400 --> 00:06:31,440
+your character around
+
+173
+00:06:31,440 --> 00:06:33,039
+for now guys i hope you enjoyed this
+
+174
+00:06:33,039 --> 00:06:35,199
+video if you did leave a thumbs up
+
+175
+00:06:35,199 --> 00:06:37,199
+smash that subscribe button and ring
+
+176
+00:06:37,199 --> 00:06:38,639
+that bell and i will see you
+
+177
+00:06:38,639 --> 00:06:40,160
+in the next video thank you for watching
+
+178
+00:06:40,160 --> 00:06:49,840
+guys and peace
+
+179
+00:06:52,020 --> 00:07:00,759
+[Music]
+
+180
+00:07:00,759 --> 00:07:03,759
+now

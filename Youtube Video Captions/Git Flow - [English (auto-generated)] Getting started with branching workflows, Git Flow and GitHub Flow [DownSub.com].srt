@@ -1,0 +1,1422 @@
+Getting started with branching workflows, Git Flow and GitHub Flow
+Link: https://youtu.be/gW6dFpTMk8s
+
+1
+00:00:00,000 --> 00:00:01,120
+hello everybody i'm nick and this i'm
+
+2
+00:00:01,120 --> 00:00:02,560
+going to talk about something called a
+
+3
+00:00:02,560 --> 00:00:04,480
+git branching workflow or a branching
+
+4
+00:00:04,480 --> 00:00:06,480
+model or a branching flow which all
+
+5
+00:00:06,480 --> 00:00:08,240
+basically loosely mean the same thing
+
+6
+00:00:08,240 --> 00:00:10,000
+and based around the idea that as many
+
+7
+00:00:10,000 --> 00:00:11,599
+people are writing software
+
+8
+00:00:11,599 --> 00:00:13,759
+out of a single code base you need
+
+9
+00:00:13,759 --> 00:00:15,920
+somehow to manage all that and be able
+
+10
+00:00:15,920 --> 00:00:17,039
+to make sure that
+
+11
+00:00:17,039 --> 00:00:18,720
+there is no conflict between two
+
+12
+00:00:18,720 --> 00:00:20,720
+developers working on separate features
+
+13
+00:00:20,720 --> 00:00:22,560
+or at which point you release software
+
+14
+00:00:22,560 --> 00:00:24,240
+to production and how do you keep doing
+
+15
+00:00:24,240 --> 00:00:25,119
+that fast
+
+16
+00:00:25,119 --> 00:00:26,960
+so in this video i'm going to take a
+
+17
+00:00:26,960 --> 00:00:28,720
+look at the two most popular ones
+
+18
+00:00:28,720 --> 00:00:31,279
+git flow and github flow and they're
+
+19
+00:00:31,279 --> 00:00:32,880
+both good for different reasons and
+
+20
+00:00:32,880 --> 00:00:34,079
+maybe they're both
+
+21
+00:00:34,079 --> 00:00:36,320
+bad or unsuitable to your use case for
+
+22
+00:00:36,320 --> 00:00:37,600
+different reasons as well
+
+23
+00:00:37,600 --> 00:00:38,640
+i'm going to take a look at them
+
+24
+00:00:38,640 --> 00:00:40,000
+individually and i'm going to talk about
+
+25
+00:00:40,000 --> 00:00:41,840
+my experience using them because i have
+
+26
+00:00:41,840 --> 00:00:43,520
+used both of them and i am actually
+
+27
+00:00:43,520 --> 00:00:44,559
+using one of them
+
+28
+00:00:44,559 --> 00:00:46,320
+actively right now the ship software to
+
+29
+00:00:46,320 --> 00:00:47,920
+production and give you my opinion
+
+30
+00:00:47,920 --> 00:00:49,120
+if you like a lot of content and you
+
+31
+00:00:49,120 --> 00:00:49,920
+want to see more make sure you
+
+32
+00:00:49,920 --> 00:00:51,520
+subscribing this notification bell
+
+33
+00:00:51,520 --> 00:00:53,440
+to get alerted when i upload a new video
+
+34
+00:00:53,440 --> 00:00:54,960
+so what do i have here
+
+35
+00:00:54,960 --> 00:00:58,000
+first let's take a look at git flow
+
+36
+00:00:58,000 --> 00:01:00,719
+now before any workflow the way i used
+
+37
+00:01:00,719 --> 00:01:02,320
+to develop software that i was writing
+
+38
+00:01:02,320 --> 00:01:03,520
+just for myself
+
+39
+00:01:03,520 --> 00:01:05,760
+was i would just keep adding commits
+
+40
+00:01:05,760 --> 00:01:07,040
+into main branch
+
+41
+00:01:07,040 --> 00:01:08,400
+and that's it and at some point i will
+
+42
+00:01:08,400 --> 00:01:10,240
+just post production and then
+
+43
+00:01:10,240 --> 00:01:12,400
+commits and then production the problem
+
+44
+00:01:12,400 --> 00:01:13,920
+with this approach is that
+
+45
+00:01:13,920 --> 00:01:15,920
+if you have more than one people just
+
+46
+00:01:15,920 --> 00:01:18,240
+working on a software code base
+
+47
+00:01:18,240 --> 00:01:21,040
+then you cannot just do that because at
+
+48
+00:01:21,040 --> 00:01:22,000
+which point
+
+49
+00:01:22,000 --> 00:01:25,040
+is this my release and at which point
+
+50
+00:01:25,040 --> 00:01:27,840
+is this you know someone else's release
+
+51
+00:01:27,840 --> 00:01:28,640
+where you have
+
+52
+00:01:28,640 --> 00:01:31,040
+this sort of mixing of commits it just
+
+53
+00:01:31,040 --> 00:01:32,720
+won't work it's very very tough
+
+54
+00:01:32,720 --> 00:01:35,360
+so in the beginning there was git flow
+
+55
+00:01:35,360 --> 00:01:36,640
+and let me just
+
+56
+00:01:36,640 --> 00:01:39,360
+make this a bit bigger and give you the
+
+57
+00:01:39,360 --> 00:01:40,560
+name up here
+
+58
+00:01:40,560 --> 00:01:43,840
+so git flow has the following structure
+
+59
+00:01:43,840 --> 00:01:45,680
+and for the avoidance of any doubt
+
+60
+00:01:45,680 --> 00:01:48,560
+main over here is basically the master
+
+61
+00:01:48,560 --> 00:01:50,159
+branch now called main
+
+62
+00:01:50,159 --> 00:01:51,680
+and we're using more inclusive language
+
+63
+00:01:51,680 --> 00:01:53,200
+so this is what remains in case you're a
+
+64
+00:01:53,200 --> 00:01:54,240
+bit confused
+
+65
+00:01:54,240 --> 00:01:56,880
+and then the main branch when creating
+
+66
+00:01:56,880 --> 00:01:57,680
+git flow
+
+67
+00:01:57,680 --> 00:02:00,240
+also has a second branch which is the
+
+68
+00:02:00,240 --> 00:02:01,200
+develop branch
+
+69
+00:02:01,200 --> 00:02:02,719
+and the relationship between develop and
+
+70
+00:02:02,719 --> 00:02:05,040
+main is that main
+
+71
+00:02:05,040 --> 00:02:08,000
+is code that technically has been or can
+
+72
+00:02:08,000 --> 00:02:08,399
+be
+
+73
+00:02:08,399 --> 00:02:10,959
+individually deployed into production
+
+74
+00:02:10,959 --> 00:02:12,000
+develop is being
+
+75
+00:02:12,000 --> 00:02:14,319
+actively worked on in some way and i'm
+
+76
+00:02:14,319 --> 00:02:15,840
+going to explain what that way looks
+
+77
+00:02:15,840 --> 00:02:16,319
+like
+
+78
+00:02:16,319 --> 00:02:18,400
+so develop will be branched off of main
+
+79
+00:02:18,400 --> 00:02:19,920
+when main was created so
+
+80
+00:02:19,920 --> 00:02:22,400
+here this was created from main and then
+
+81
+00:02:22,400 --> 00:02:23,599
+as people want to work
+
+82
+00:02:23,599 --> 00:02:25,920
+on features they create what's called
+
+83
+00:02:25,920 --> 00:02:27,120
+feature branches
+
+84
+00:02:27,120 --> 00:02:28,720
+and these can be many i'm going to
+
+85
+00:02:28,720 --> 00:02:31,120
+create one here for the purpose of the
+
+86
+00:02:31,120 --> 00:02:33,120
+video but they can be many because
+
+87
+00:02:33,120 --> 00:02:34,800
+multiple people can be working on
+
+88
+00:02:34,800 --> 00:02:36,160
+different branches and different
+
+89
+00:02:36,160 --> 00:02:37,920
+features at the same time
+
+90
+00:02:37,920 --> 00:02:41,120
+and this is going to be called feature
+
+91
+00:02:41,120 --> 00:02:43,120
+and feature branches usually have a name
+
+92
+00:02:43,120 --> 00:02:44,400
+along the lines of
+
+93
+00:02:44,400 --> 00:02:46,480
+feature forward slash and then what
+
+94
+00:02:46,480 --> 00:02:47,440
+you're doing with
+
+95
+00:02:47,440 --> 00:02:49,519
+that feature what it is about and what
+
+96
+00:02:49,519 --> 00:02:50,640
+happens is
+
+97
+00:02:50,640 --> 00:02:53,200
+at this point you're creating a feature
+
+98
+00:02:53,200 --> 00:02:55,040
+branch from develop at some point in
+
+99
+00:02:55,040 --> 00:02:55,840
+time
+
+100
+00:02:55,840 --> 00:02:58,319
+now many of them can be made so someone
+
+101
+00:02:58,319 --> 00:02:59,040
+else could come
+
+102
+00:02:59,040 --> 00:03:00,879
+here and then you have another feature
+
+103
+00:03:00,879 --> 00:03:03,120
+being worked on that's absolutely fine
+
+104
+00:03:03,120 --> 00:03:05,200
+but that one that you originally created
+
+105
+00:03:05,200 --> 00:03:06,640
+here to do your feature
+
+106
+00:03:06,640 --> 00:03:09,360
+is yours to work with and then you keep
+
+107
+00:03:09,360 --> 00:03:10,000
+adding
+
+108
+00:03:10,000 --> 00:03:12,400
+comments here and then at some point
+
+109
+00:03:12,400 --> 00:03:13,920
+you're like oh this feature is complete
+
+110
+00:03:13,920 --> 00:03:15,360
+what i can do now
+
+111
+00:03:15,360 --> 00:03:17,360
+is i'm going to create a pull request or
+
+112
+00:03:17,360 --> 00:03:18,480
+a pr
+
+113
+00:03:18,480 --> 00:03:20,480
+and once people approve it they can come
+
+114
+00:03:20,480 --> 00:03:22,239
+in comments say i don't like this code
+
+115
+00:03:22,239 --> 00:03:24,080
+this won't work this does work
+
+116
+00:03:24,080 --> 00:03:26,560
+and then once that's done you can merge
+
+117
+00:03:26,560 --> 00:03:28,720
+it back into develop so at this point
+
+118
+00:03:28,720 --> 00:03:31,440
+develop has this new feature but this is
+
+119
+00:03:31,440 --> 00:03:33,200
+not in production yet
+
+120
+00:03:33,200 --> 00:03:35,200
+some people like to at this point of the
+
+121
+00:03:35,200 --> 00:03:37,920
+pr also push to something like a qa
+
+122
+00:03:37,920 --> 00:03:38,640
+environment
+
+123
+00:03:38,640 --> 00:03:40,959
+where you might have a qa engineer jump
+
+124
+00:03:40,959 --> 00:03:42,319
+in and
+
+125
+00:03:42,319 --> 00:03:43,920
+do some sanity checks or run some
+
+126
+00:03:43,920 --> 00:03:45,760
+automation tests for that specific
+
+127
+00:03:45,760 --> 00:03:47,280
+feature you can do that that's totally
+
+128
+00:03:47,280 --> 00:03:48,000
+fine
+
+129
+00:03:48,000 --> 00:03:50,159
+but you usually don't do that on develop
+
+130
+00:03:50,159 --> 00:03:52,239
+develop keeps having things
+
+131
+00:03:52,239 --> 00:03:54,640
+added to it from other branches and at
+
+132
+00:03:54,640 --> 00:03:55,360
+some point
+
+133
+00:03:55,360 --> 00:03:58,239
+once develop has enough features merged
+
+134
+00:03:58,239 --> 00:03:58,640
+back
+
+135
+00:03:58,640 --> 00:04:01,360
+into it you have what is called a
+
+136
+00:04:01,360 --> 00:04:02,560
+release branch
+
+137
+00:04:02,560 --> 00:04:05,360
+so you say oh fine we have the 10
+
+138
+00:04:05,360 --> 00:04:06,560
+features we want to ship now to
+
+139
+00:04:06,560 --> 00:04:07,439
+production
+
+140
+00:04:07,439 --> 00:04:10,319
+so what we're going to do is we are
+
+141
+00:04:10,319 --> 00:04:11,360
+going to create
+
+142
+00:04:11,360 --> 00:04:13,439
+a release branch and this release branch
+
+143
+00:04:13,439 --> 00:04:14,720
+will have code
+
+144
+00:04:14,720 --> 00:04:17,040
+from develop so we create the release
+
+145
+00:04:17,040 --> 00:04:19,120
+branch usually with a name called
+
+146
+00:04:19,120 --> 00:04:21,600
+release voice class and the version of
+
+147
+00:04:21,600 --> 00:04:23,680
+the release so let's say 1.0
+
+148
+00:04:23,680 --> 00:04:25,280
+and then here the moment you have this
+
+149
+00:04:25,280 --> 00:04:27,280
+release branch you don't add more
+
+150
+00:04:27,280 --> 00:04:28,080
+features to it
+
+151
+00:04:28,080 --> 00:04:30,400
+the release is feature complete and what
+
+152
+00:04:30,400 --> 00:04:31,520
+you usually do
+
+153
+00:04:31,520 --> 00:04:33,680
+is you push that release branch all the
+
+154
+00:04:33,680 --> 00:04:35,360
+way to pre-production
+
+155
+00:04:35,360 --> 00:04:37,280
+and then you run your automation test
+
+156
+00:04:37,280 --> 00:04:38,960
+maybe you have end-to-end tests maybe
+
+157
+00:04:38,960 --> 00:04:40,560
+you run a full suite of testing this
+
+158
+00:04:40,560 --> 00:04:41,919
+completely up to you but this is your
+
+159
+00:04:41,919 --> 00:04:42,560
+chance
+
+160
+00:04:42,560 --> 00:04:44,320
+before you push the prod to actually
+
+161
+00:04:44,320 --> 00:04:45,759
+make sure that this code base
+
+162
+00:04:45,759 --> 00:04:47,360
+is solid and it works and the features
+
+163
+00:04:47,360 --> 00:04:49,040
+are there bug free
+
+164
+00:04:49,040 --> 00:04:50,880
+and once you're happy with that then
+
+165
+00:04:50,880 --> 00:04:52,320
+what happens is
+
+166
+00:04:52,320 --> 00:04:55,360
+this release branch is being merged into
+
+167
+00:04:55,360 --> 00:04:57,040
+master and at this point it's being
+
+168
+00:04:57,040 --> 00:04:58,160
+tagged
+
+169
+00:04:58,160 --> 00:05:00,160
+with a release that's a git tag and this
+
+170
+00:05:00,160 --> 00:05:01,680
+means that at this point this main
+
+171
+00:05:01,680 --> 00:05:03,680
+branch can be deployed to production
+
+172
+00:05:03,680 --> 00:05:05,840
+without presumably any problems now what
+
+173
+00:05:05,840 --> 00:05:07,360
+you also need to do at this point to
+
+174
+00:05:07,360 --> 00:05:08,960
+make sure that the branching strategy
+
+175
+00:05:08,960 --> 00:05:10,560
+can work without any
+
+176
+00:05:10,560 --> 00:05:13,199
+desync problems is this main branch
+
+177
+00:05:13,199 --> 00:05:14,639
+needs to be merged
+
+178
+00:05:14,639 --> 00:05:17,120
+back into develop and that's the main
+
+179
+00:05:17,120 --> 00:05:17,759
+flow
+
+180
+00:05:17,759 --> 00:05:19,600
+there is another type of branch that you
+
+181
+00:05:19,600 --> 00:05:20,960
+can have in this flow
+
+182
+00:05:20,960 --> 00:05:23,680
+and that's called the hotfix branch so
+
+183
+00:05:23,680 --> 00:05:24,960
+usually what happens
+
+184
+00:05:24,960 --> 00:05:28,160
+um well actually hopefully not usually
+
+185
+00:05:28,160 --> 00:05:30,800
+but sometimes what happens is you have
+
+186
+00:05:30,800 --> 00:05:32,240
+an issue that's critical and it
+
+187
+00:05:32,240 --> 00:05:33,759
+shouldn't go through this whole flow
+
+188
+00:05:33,759 --> 00:05:35,840
+because it's just very slow to do so
+
+189
+00:05:35,840 --> 00:05:37,120
+and you need to push it to production
+
+190
+00:05:37,120 --> 00:05:39,360
+very very quickly so what you do
+
+191
+00:05:39,360 --> 00:05:41,840
+is you create a hotfix branch straight
+
+192
+00:05:41,840 --> 00:05:42,720
+out of main
+
+193
+00:05:42,720 --> 00:05:45,440
+then you fix the problem and then you
+
+194
+00:05:45,440 --> 00:05:46,080
+merge
+
+195
+00:05:46,080 --> 00:05:50,400
+here you tag that and then you also
+
+196
+00:05:50,400 --> 00:05:53,440
+merge that fix into develop
+
+197
+00:05:53,440 --> 00:05:54,880
+and of course at the point of matching
+
+198
+00:05:54,880 --> 00:05:57,039
+in main you also push into production
+
+199
+00:05:57,039 --> 00:05:59,280
+now let's talk about this flow a bit
+
+200
+00:05:59,280 --> 00:06:00,479
+because i think it's doing some things
+
+201
+00:06:00,479 --> 00:06:01,120
+right
+
+202
+00:06:01,120 --> 00:06:02,880
+but also it can't really be used if you
+
+203
+00:06:02,880 --> 00:06:04,639
+want to encourage some behaviors
+
+204
+00:06:04,639 --> 00:06:07,039
+for example the fact that you have more
+
+205
+00:06:07,039 --> 00:06:08,319
+controlled releases
+
+206
+00:06:08,319 --> 00:06:10,560
+might mean that this model lends itself
+
+207
+00:06:10,560 --> 00:06:11,360
+easier
+
+208
+00:06:11,360 --> 00:06:13,840
+to more monolithic applications where
+
+209
+00:06:13,840 --> 00:06:15,759
+many features constitute a release
+
+210
+00:06:15,759 --> 00:06:17,680
+and you might want to be very methodical
+
+211
+00:06:17,680 --> 00:06:19,199
+in how you deploy that
+
+212
+00:06:19,199 --> 00:06:20,479
+however if you're working on
+
+213
+00:06:20,479 --> 00:06:22,639
+microservices and you're encouraging a
+
+214
+00:06:22,639 --> 00:06:24,080
+continuous delivery and continuous
+
+215
+00:06:24,080 --> 00:06:25,280
+deployment model
+
+216
+00:06:25,280 --> 00:06:28,639
+this thing doesn't really work because
+
+217
+00:06:28,639 --> 00:06:30,880
+it's quite slow and it has quite a lot
+
+218
+00:06:30,880 --> 00:06:32,880
+of process and github saw that and the
+
+219
+00:06:32,880 --> 00:06:34,639
+like i think we can do better
+
+220
+00:06:34,639 --> 00:06:37,199
+so what they did is the following they
+
+221
+00:06:37,199 --> 00:06:38,800
+created something called
+
+222
+00:06:38,800 --> 00:06:42,160
+the git hub flow and a github flow
+
+223
+00:06:42,160 --> 00:06:45,120
+looks something like this it all starts
+
+224
+00:06:45,120 --> 00:06:45,759
+again
+
+225
+00:06:45,759 --> 00:06:49,199
+with a main branch but it is way way
+
+226
+00:06:49,199 --> 00:06:50,880
+simpler what happens is
+
+227
+00:06:50,880 --> 00:06:52,639
+you still have the same concept of a
+
+228
+00:06:52,639 --> 00:06:54,080
+feature branch even though you don't
+
+229
+00:06:54,080 --> 00:06:55,680
+necessarily need to call it a feature
+
+230
+00:06:55,680 --> 00:06:56,720
+branch it's just
+
+231
+00:06:56,720 --> 00:06:59,280
+what you're working on and the idea is
+
+232
+00:06:59,280 --> 00:07:00,000
+that this
+
+233
+00:07:00,000 --> 00:07:01,919
+individual thing you're working on
+
+234
+00:07:01,919 --> 00:07:03,360
+should be deployable
+
+235
+00:07:03,360 --> 00:07:04,880
+to production we're gonna still call it
+
+236
+00:07:04,880 --> 00:07:07,039
+feature for the sake of consistency but
+
+237
+00:07:07,039 --> 00:07:08,560
+you can call it task you can call it
+
+238
+00:07:08,560 --> 00:07:09,520
+anything you want
+
+239
+00:07:09,520 --> 00:07:12,240
+and as you can tell not everything
+
+240
+00:07:12,240 --> 00:07:14,080
+probably is deployable to production
+
+241
+00:07:14,080 --> 00:07:16,160
+instantly individually independently but
+
+242
+00:07:16,160 --> 00:07:17,520
+in a microservice environment
+
+243
+00:07:17,520 --> 00:07:19,520
+it's way way easier to do that because
+
+244
+00:07:19,520 --> 00:07:21,599
+things are way more isolated
+
+245
+00:07:21,599 --> 00:07:24,720
+so what happens is main is being
+
+246
+00:07:24,720 --> 00:07:26,880
+branched into that feature branch
+
+247
+00:07:26,880 --> 00:07:28,960
+then you keep adding code then at this
+
+248
+00:07:28,960 --> 00:07:31,280
+point a pull request is created again
+
+249
+00:07:31,280 --> 00:07:33,039
+and at this point as it's created you
+
+250
+00:07:33,039 --> 00:07:34,960
+can actually push all the way to qa and
+
+251
+00:07:34,960 --> 00:07:36,160
+some people are actually pushing all the
+
+252
+00:07:36,160 --> 00:07:37,280
+way to pre-production
+
+253
+00:07:37,280 --> 00:07:38,880
+that is totally fine it depends on how
+
+254
+00:07:38,880 --> 00:07:41,280
+your testing suite and integration suite
+
+255
+00:07:41,280 --> 00:07:43,599
+is built so if you want to you can push
+
+256
+00:07:43,599 --> 00:07:44,560
+it to pre-prod
+
+257
+00:07:44,560 --> 00:07:47,039
+and at this point as this pr is open you
+
+258
+00:07:47,039 --> 00:07:47,680
+keep
+
+259
+00:07:47,680 --> 00:07:50,720
+adding missing things or fixing bugs
+
+260
+00:07:50,720 --> 00:07:52,879
+other coming in from the qa engineers
+
+261
+00:07:52,879 --> 00:07:54,319
+and when you're ready and everyone has
+
+262
+00:07:54,319 --> 00:07:56,479
+approved this pr you merge
+
+263
+00:07:56,479 --> 00:07:58,400
+back into main and at this point we
+
+264
+00:07:58,400 --> 00:08:00,160
+assume you're happy with the release so
+
+265
+00:08:00,160 --> 00:08:02,160
+this code base this feature that is been
+
+266
+00:08:02,160 --> 00:08:03,360
+messed into main
+
+267
+00:08:03,360 --> 00:08:06,080
+goes into prod now you can see that this
+
+268
+00:08:06,080 --> 00:08:07,759
+iteration loop is very quick
+
+269
+00:08:07,759 --> 00:08:10,400
+you branch off main you add comments you
+
+270
+00:08:10,400 --> 00:08:11,440
+create a pr
+
+271
+00:08:11,440 --> 00:08:13,599
+you push at this point some people push
+
+272
+00:08:13,599 --> 00:08:15,199
+even to production before they merge
+
+273
+00:08:15,199 --> 00:08:16,560
+into main they have that type of
+
+274
+00:08:16,560 --> 00:08:17,520
+confidence
+
+275
+00:08:17,520 --> 00:08:18,960
+i'm more of a scary account when it
+
+276
+00:08:18,960 --> 00:08:20,879
+comes to this so i usually gonna push
+
+277
+00:08:20,879 --> 00:08:23,280
+all the way to pre-production ideally if
+
+278
+00:08:23,280 --> 00:08:24,879
+i haven't merged into main
+
+279
+00:08:24,879 --> 00:08:26,479
+but some people do and they have great
+
+280
+00:08:26,479 --> 00:08:28,160
+success into it it really comes down to
+
+281
+00:08:28,160 --> 00:08:29,120
+the maturity
+
+282
+00:08:29,120 --> 00:08:31,599
+of the team and the software that's why
+
+283
+00:08:31,599 --> 00:08:32,399
+git flow
+
+284
+00:08:32,399 --> 00:08:34,080
+might look a bit convoluted but it's way
+
+285
+00:08:34,080 --> 00:08:35,839
+more structured while
+
+286
+00:08:35,839 --> 00:08:37,599
+github flow might look like the wild
+
+287
+00:08:37,599 --> 00:08:39,519
+wild west but in reality
+
+288
+00:08:39,519 --> 00:08:41,599
+if you have a well-done machine it can
+
+289
+00:08:41,599 --> 00:08:43,200
+actually be way more effective
+
+290
+00:08:43,200 --> 00:08:44,959
+in making sure you deploy code
+
+291
+00:08:44,959 --> 00:08:46,320
+constantly into production and by
+
+292
+00:08:46,320 --> 00:08:47,839
+deploying small pieces to production
+
+293
+00:08:47,839 --> 00:08:48,640
+constantly
+
+294
+00:08:48,640 --> 00:08:50,959
+you eliminate a lot of room that you
+
+295
+00:08:50,959 --> 00:08:52,640
+might have forever here
+
+296
+00:08:52,640 --> 00:08:54,399
+because if you have five features and
+
+297
+00:08:54,399 --> 00:08:55,839
+one of those features has a bug
+
+298
+00:08:55,839 --> 00:08:58,000
+the whole release goes down and you lose
+
+299
+00:08:58,000 --> 00:08:58,959
+four good
+
+300
+00:08:58,959 --> 00:09:01,680
+features and because of the one bad one
+
+301
+00:09:01,680 --> 00:09:02,959
+while in github flow
+
+302
+00:09:02,959 --> 00:09:04,160
+if something goes wrong with this
+
+303
+00:09:04,160 --> 00:09:05,839
+release worst case scenario you just
+
+304
+00:09:05,839 --> 00:09:07,600
+roll back to the previous one and that's
+
+305
+00:09:07,600 --> 00:09:08,800
+it there's nothing more to it
+
+306
+00:09:08,800 --> 00:09:10,560
+and this is exactly what i've seen in
+
+307
+00:09:10,560 --> 00:09:12,480
+the past as well with github flow
+
+308
+00:09:12,480 --> 00:09:14,080
+because the code you deploy usually is
+
+309
+00:09:14,080 --> 00:09:14,399
+way
+
+310
+00:09:14,399 --> 00:09:16,480
+less it eliminates a lot of room for
+
+311
+00:09:16,480 --> 00:09:18,399
+error big errors anyway
+
+312
+00:09:18,399 --> 00:09:21,120
+and the recovery is very fast now this
+
+313
+00:09:21,120 --> 00:09:22,480
+does mean that the team needs to be on
+
+314
+00:09:22,480 --> 00:09:24,000
+the same page with how we deploy
+
+315
+00:09:24,000 --> 00:09:24,880
+software
+
+316
+00:09:24,880 --> 00:09:26,959
+but it really allows you to make the
+
+317
+00:09:26,959 --> 00:09:28,720
+best use of the tooling you might have
+
+318
+00:09:28,720 --> 00:09:29,519
+for example
+
+319
+00:09:29,519 --> 00:09:31,839
+if you want to do a b deployments canary
+
+320
+00:09:31,839 --> 00:09:32,640
+releases
+
+321
+00:09:32,640 --> 00:09:34,240
+those are things you can do way way
+
+322
+00:09:34,240 --> 00:09:36,640
+easier if you deploy smaller pieces of
+
+323
+00:09:36,640 --> 00:09:37,120
+code
+
+324
+00:09:37,120 --> 00:09:40,160
+more constantly than huge pieces of code
+
+325
+00:09:40,160 --> 00:09:42,480
+less regularly ultimately i can't tell
+
+326
+00:09:42,480 --> 00:09:44,160
+you what to use this really comes down
+
+327
+00:09:44,160 --> 00:09:44,800
+to
+
+328
+00:09:44,800 --> 00:09:47,279
+how your team can adopt those flows but
+
+329
+00:09:47,279 --> 00:09:48,720
+i can guarantee you that
+
+330
+00:09:48,720 --> 00:09:50,560
+if you don't have one of those flows
+
+331
+00:09:50,560 --> 00:09:52,800
+currently it can really really give
+
+332
+00:09:52,800 --> 00:09:54,480
+structure to your software development
+
+333
+00:09:54,480 --> 00:09:57,600
+and really help you do safer and more
+
+334
+00:09:57,600 --> 00:09:58,640
+structured releases
+
+335
+00:09:58,640 --> 00:10:00,240
+ultimately it's a decision you'll make
+
+336
+00:10:00,240 --> 00:10:01,920
+but here's everything you need to know
+
+337
+00:10:01,920 --> 00:10:03,040
+about those two flows
+
+338
+00:10:03,040 --> 00:10:04,079
+i'm gonna put more links in the
+
+339
+00:10:04,079 --> 00:10:06,160
+description github has an interactive
+
+340
+00:10:06,160 --> 00:10:08,079
+page and git flow has been around for
+
+341
+00:10:08,079 --> 00:10:10,560
+years and years so i'm gonna find a good
+
+342
+00:10:10,560 --> 00:10:11,839
+resource for that and i'm gonna put it
+
+343
+00:10:11,839 --> 00:10:13,279
+down below if you wanna read more
+
+344
+00:10:13,279 --> 00:10:14,560
+but this is all i have for you for this
+
+345
+00:10:14,560 --> 00:10:16,000
+video thank you very much for watching
+
+346
+00:10:16,000 --> 00:10:17,600
+special thanks my patreons for making
+
+347
+00:10:17,600 --> 00:10:18,640
+videos possible
+
+348
+00:10:18,640 --> 00:10:19,760
+if you want to support me as well you're
+
+349
+00:10:19,760 --> 00:10:20,800
+going to find a link in the description
+
+350
+00:10:20,800 --> 00:10:21,680
+down below
+
+351
+00:10:21,680 --> 00:10:22,959
+leave a like if you like this video
+
+352
+00:10:22,959 --> 00:10:24,320
+subscribe for more like this ring the
+
+353
+00:10:24,320 --> 00:10:25,120
+bell as well
+
+354
+00:10:25,120 --> 00:10:28,680
+and i'll see you in the next video keep
+
+355
+00:10:28,680 --> 00:10:31,680
+coding

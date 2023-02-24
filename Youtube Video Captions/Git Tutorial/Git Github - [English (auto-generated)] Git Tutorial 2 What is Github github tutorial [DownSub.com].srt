@@ -1,0 +1,919 @@
+1
+00:00:00,089 --> 00:00:02,370 Label - 1 - 00:00 ------------------------|Starting
+welcome to core basics coding tutorial
+
+2
+00:00:02,370 --> 00:00:04,140
+and this episode we are going to see
+
+3
+00:00:04,140 --> 00:00:06,620
+what is github and why is it so popular
+
+4
+00:00:06,620 --> 00:00:09,030
+github is a website that allows you to
+
+5
+00:00:09,030 --> 00:00:13,019
+store your code onto the cloud now don't
+
+6
+00:00:13,019 --> 00:00:15,870
+think of github as just a cloud storage
+
+7
+00:00:15,870 --> 00:00:19,140 Label - 7 - 00:15 ------------------------|
+it is a full-fledged version control
+
+8
+00:00:19,140 --> 00:00:22,500
+system power bi get so without
+
+9
+00:00:22,500 --> 00:00:25,650
+discussing it any further let's look at
+
+10
+00:00:25,650 --> 00:00:30,359
+the demo so first we'll go to this
+
+11
+00:00:30,359 --> 00:00:33,840
+website github calm here if you want to
+
+12
+00:00:33,840 --> 00:00:35,489
+upload your code or if you want to
+
+13
+00:00:35,489 --> 00:00:37,950
+contribute to someone else code you need
+
+14
+00:00:37,950 --> 00:00:41,340 Label - 14 - 00:37 ------------------------|
+to create your login so creating login
+
+15
+00:00:41,340 --> 00:00:43,350
+is pretty straightforward you give it
+
+16
+00:00:43,350 --> 00:00:46,440
+your email ID and password and you can
+
+17
+00:00:46,440 --> 00:00:49,530
+sign up for github I am already signed
+
+18
+00:00:49,530 --> 00:00:52,469
+up that's why I will just use sign-in
+
+19
+00:00:52,469 --> 00:00:56,670
+button and log into my account ok so I
+
+20
+00:00:56,670 --> 00:00:58,890
+had this account and I have this
+
+21
+00:00:58,890 --> 00:01:02,699 Label - 21 - 00:58 ------------------------|
+repository called py where I store all
+
+22
+00:01:02,699 --> 00:01:07,439
+of my Python code so you see like I have
+
+23
+00:01:07,439 --> 00:01:10,110 Label - 23 - 01:07 ------------------------|
+all these Python files and my readme
+
+24
+00:01:10,110 --> 00:01:13,530
+file which is here and bunch of
+
+25
+00:01:13,530 --> 00:01:17,040
+directories and here what I have is all
+
+26
+00:01:17,040 --> 00:01:20,759 Label - 26 - 01:17 ------------------------|
+my commit history so whatever code I
+
+27
+00:01:20,759 --> 00:01:22,740
+have committed all the versions and
+
+28
+00:01:22,740 --> 00:01:24,630
+everything is stored so if you want one
+
+29
+00:01:24,630 --> 00:01:26,939 Label - 29 - 01:24 ------------------------|
+if I want to go back to any of the
+
+30
+00:01:26,939 --> 00:01:29,340
+previous commit I can easily go and
+
+31
+00:01:29,340 --> 00:01:31,650
+check what happened during that coming
+
+32
+00:01:31,650 --> 00:01:35,520
+ok now I have the same codebase
+
+33
+00:01:35,520 --> 00:01:38,640
+synced up on to my local computer here
+
+34
+00:01:38,640 --> 00:01:40,909
+in this directory so this is py charm
+
+35
+00:01:40,909 --> 00:01:44,070
+Python code editor and as you can see
+
+36
+00:01:44,070 --> 00:01:47,850
+here I have same list of files and
+
+37
+00:01:47,850 --> 00:01:49,979
+directories for example I have debugging
+
+38
+00:01:49,979 --> 00:01:51,619
+modules multiprocessing
+
+39
+00:01:51,619 --> 00:01:57,420
+so it's basically all these files I have
+
+40
+00:01:57,420 --> 00:02:01,399
+them stored on this github cloud storage
+
+41
+00:02:01,399 --> 00:02:04,110 Label - 41 - 02:01 ------------------------|
+cloud storage is basically something
+
+42
+00:02:04,110 --> 00:02:07,950
+like Gmail so Gmail you can access it
+
+43
+00:02:07,950 --> 00:02:10,560
+from anywhere because it is not stored
+
+44
+00:02:10,560 --> 00:02:13,410
+locally on your device computer or it
+
+45
+00:02:13,410 --> 00:02:15,330 Label - 45 - 02:13 ------------------------|
+could be a cell phone it is stored
+
+46
+00:02:15,330 --> 00:02:17,130
+somewhere else so you can access it
+
+47
+00:02:17,130 --> 00:02:21,209
+anytime similarly github is a cloud
+
+48
+00:02:21,209 --> 00:02:23,550
+where my code is stored so if I want to
+
+49
+00:02:23,550 --> 00:02:25,200
+log in from some other computer and make
+
+50
+00:02:25,200 --> 00:02:28,190
+my code changes I can always do it okay
+
+51
+00:02:28,190 --> 00:02:32,670 Label - 51 - 02:28 ------------------------|
+now it is powered by a good version
+
+52
+00:02:32,670 --> 00:02:35,280
+control system if you already don't know
+
+53
+00:02:35,280 --> 00:02:37,170
+what is version control system I would
+
+54
+00:02:37,170 --> 00:02:40,620
+suggest that you go and watch my video
+
+55
+00:02:40,620 --> 00:02:45,360
+on the version control system okay so
+
+56
+00:02:45,360 --> 00:02:47,760 Label - 56 - 02:45 ------------------------|
+now I will show you how to make code
+
+57
+00:02:47,760 --> 00:02:50,400
+change and push it to our github
+
+58
+00:02:50,400 --> 00:02:53,489
+repository repository is basically this
+
+59
+00:02:53,489 --> 00:02:55,410
+particular area it's like a directory
+
+60
+00:02:55,410 --> 00:02:57,599
+with all the files and subdirectory into
+
+61
+00:02:57,599 --> 00:03:00,150
+it so that's what I call a repository or
+
+62
+00:03:00,150 --> 00:03:03,959
+a repo repo is a short form so learn P
+
+63
+00:03:03,959 --> 00:03:08,090
+is my login name and py is my repository
+
+64
+00:03:08,090 --> 00:03:11,250
+okay so I have this particular code
+
+65
+00:03:11,250 --> 00:03:13,290
+which is not functioning the way it
+
+66
+00:03:13,290 --> 00:03:16,680
+should so I am making some code changes
+
+67
+00:03:16,680 --> 00:03:25,350
+here okay and I made my code changes
+
+68
+00:03:25,350 --> 00:03:28,890
+higher on the program I make sure it
+
+69
+00:03:28,890 --> 00:03:31,650
+works fine yes it is working fine so now
+
+70
+00:03:31,650 --> 00:03:34,769
+I am ready to push my changes to get now
+
+71
+00:03:34,769 --> 00:03:36,780
+before I make this changes let me show
+
+72
+00:03:36,780 --> 00:03:40,799
+you what - dot py has on github so on
+
+73
+00:03:40,799 --> 00:03:43,139
+github as you see I added these two
+
+74
+00:03:43,139 --> 00:03:46,590
+lines ok but in github it is still my
+
+75
+00:03:46,590 --> 00:03:50,220
+old code ok so I just got that code I
+
+76
+00:03:50,220 --> 00:03:52,470
+added these two lines to fix some issue
+
+77
+00:03:52,470 --> 00:03:55,590
+and now I am going to push my changes to
+
+78
+00:03:55,590 --> 00:04:00,139
+github so I will say right-click git
+
+79
+00:04:00,139 --> 00:04:03,209
+commit directory whatever changes I have
+
+80
+00:04:03,209 --> 00:04:07,430
+I just want to commit it so I will save
+
+81
+00:04:07,430 --> 00:04:14,670
+fixed a bug in taste dot py and I will
+
+82
+00:04:14,670 --> 00:04:17,579
+say gump commit and push so what this
+
+83
+00:04:17,579 --> 00:04:21,269
+will do is this will push my changes to
+
+84
+00:04:21,269 --> 00:04:24,810
+upstream to here ok
+
+85
+00:04:24,810 --> 00:04:27,060
+and now if I look at my commit log here
+
+86
+00:04:27,060 --> 00:04:30,150
+you see fix a bug in test or py whatever
+
+87
+00:04:30,150 --> 00:04:32,430
+I committed 11 seconds ago it is visible
+
+88
+00:04:32,430 --> 00:04:35,010
+here and if I click here on this commit
+
+89
+00:04:35,010 --> 00:04:37,350
+ID it will show me the difference you
+
+90
+00:04:37,350 --> 00:04:39,900
+see these two lines are highlighted I it
+
+91
+00:04:39,900 --> 00:04:43,590
+says that I added these two lines ok so
+
+92
+00:04:43,590 --> 00:04:46,710
+now my code is pushed and if I look at
+
+93
+00:04:46,710 --> 00:04:50,550
+this dot py file I have those two lines
+
+94
+00:04:50,550 --> 00:04:54,870
+added here so this is a quick demo of
+
+95
+00:04:54,870 --> 00:04:59,960
+how you push your changes to your github
+
+96
+00:04:59,960 --> 00:05:02,700
+okay let me now cover some of the
+
+97
+00:05:02,700 --> 00:05:06,270
+interesting features of github the most
+
+98
+00:05:06,270 --> 00:05:08,160
+important feature of github is a pull
+
+99
+00:05:08,160 --> 00:05:09,060
+request
+
+100
+00:05:09,060 --> 00:05:12,000
+what pull request does is it allows you
+
+101
+00:05:12,000 --> 00:05:15,330
+to collaborate with other projects in
+
+102
+00:05:15,330 --> 00:05:18,750
+this diagram there is this github repo
+
+103
+00:05:18,750 --> 00:05:21,540
+let's say this is some inventory
+
+104
+00:05:21,540 --> 00:05:24,180
+management system right so this is the
+
+105
+00:05:24,180 --> 00:05:25,860
+code for inventory management system it
+
+106
+00:05:25,860 --> 00:05:28,530
+has bench of files and restore on github
+
+107
+00:05:28,530 --> 00:05:30,510
+repo that's why I have shown it in the
+
+108
+00:05:30,510 --> 00:05:33,300
+cloud and these people are kind of the
+
+109
+00:05:33,300 --> 00:05:35,760
+owner of tag repo these are the people
+
+110
+00:05:35,760 --> 00:05:39,090
+who write or who wrote that code ok now
+
+111
+00:05:39,090 --> 00:05:42,330
+let's see this person acts he wants to
+
+112
+00:05:42,330 --> 00:05:45,510
+make Jeanne in into this code for that
+
+113
+00:05:45,510 --> 00:05:48,419
+he will just simply fork the code fork
+
+114
+00:05:48,419 --> 00:05:50,970
+means just simply copying the code to
+
+115
+00:05:50,970 --> 00:05:53,669
+his own private space so again this is
+
+116
+00:05:53,669 --> 00:05:55,710
+in the cloud which is which means it is
+
+117
+00:05:55,710 --> 00:05:59,039
+on github but it is a private repository
+
+118
+00:05:59,039 --> 00:06:01,530
+which means it is this person's private
+
+119
+00:06:01,530 --> 00:06:04,889
+space and he will sync up the code to
+
+120
+00:06:04,889 --> 00:06:06,510
+his local computer he will make changes
+
+121
+00:06:06,510 --> 00:06:09,360
+for example in this function this blue
+
+122
+00:06:09,360 --> 00:06:11,729
+line is the chain that this guy made and
+
+123
+00:06:11,729 --> 00:06:14,580
+he will push it to his own cloud after
+
+124
+00:06:14,580 --> 00:06:19,260
+that once he is done making his changes
+
+125
+00:06:19,260 --> 00:06:21,660
+and he tested his code and he's good to
+
+126
+00:06:21,660 --> 00:06:21,990
+go
+
+127
+00:06:21,990 --> 00:06:25,979
+he will sand or request to these people
+
+128
+00:06:25,979 --> 00:06:30,570
+asking to pull his changes into the main
+
+129
+00:06:30,570 --> 00:06:33,390
+repository so he will say ok hey guys
+
+130
+00:06:33,390 --> 00:06:36,570
+I'm done with my change can you please
+
+131
+00:06:36,570 --> 00:06:38,020
+pull my change
+
+132
+00:06:38,020 --> 00:06:41,370
+into your repository and these people
+
+133
+00:06:41,370 --> 00:06:44,230
+using our code review they will
+
+134
+00:06:44,230 --> 00:06:46,480
+basically pull the question as a code
+
+135
+00:06:46,480 --> 00:06:48,250
+review so they will do a code review and
+
+136
+00:06:48,250 --> 00:06:52,060
+if it if it looks good to them then they
+
+137
+00:06:52,060 --> 00:06:54,520
+will accept the pull request so that's
+
+138
+00:06:54,520 --> 00:06:57,550
+how the code will get merged here now
+
+139
+00:06:57,550 --> 00:07:01,270
+pull requests is becoming a central
+
+140
+00:07:01,270 --> 00:07:05,290
+theme in open source world so an open
+
+141
+00:07:05,290 --> 00:07:07,420
+source project anyone can contribute to
+
+142
+00:07:07,420 --> 00:07:11,680
+the open source code so most of the open
+
+143
+00:07:11,680 --> 00:07:14,260
+source projects are nowadays on github
+
+144
+00:07:14,260 --> 00:07:17,320
+and the people who contribute to these
+
+145
+00:07:17,320 --> 00:07:20,770
+projects using a poll request are that's
+
+146
+00:07:20,770 --> 00:07:23,620
+why a github github is becoming very
+
+147
+00:07:23,620 --> 00:07:26,080
+popular because it has such a good
+
+148
+00:07:26,080 --> 00:07:29,080
+support for collaboration and open
+
+149
+00:07:29,080 --> 00:07:32,740
+source projects okay there are some
+
+150
+00:07:32,740 --> 00:07:35,650
+other useful features of github status
+
+151
+00:07:35,650 --> 00:07:38,380
+issues issue tracking you know if you
+
+152
+00:07:38,380 --> 00:07:39,970
+have a code base it will allow you to
+
+153
+00:07:39,970 --> 00:07:43,270
+track issues or Viki which means it will
+
+154
+00:07:43,270 --> 00:07:45,460
+allow you to write documentation on your
+
+155
+00:07:45,460 --> 00:07:47,860
+code pulse which will give you different
+
+156
+00:07:47,860 --> 00:07:49,930
+pulse and graph both will give you a
+
+157
+00:07:49,930 --> 00:07:52,120
+different statistics and I will quickly
+
+158
+00:07:52,120 --> 00:07:55,210
+show all these four features to you so I
+
+159
+00:07:55,210 --> 00:07:59,710
+have this sample code repository which I
+
+160
+00:07:59,710 --> 00:08:05,110
+found it through Google and on this repo
+
+161
+00:08:05,110 --> 00:08:08,020
+has this issue list so if you click here
+
+162
+00:08:08,020 --> 00:08:10,810
+so here you see your main code and then
+
+163
+00:08:10,810 --> 00:08:13,210
+here you see all the issues so people
+
+164
+00:08:13,210 --> 00:08:15,760
+will report all these issues here you
+
+165
+00:08:15,760 --> 00:08:17,500
+can go to issue you can have a
+
+166
+00:08:17,500 --> 00:08:19,570
+screenshot attached you can give a
+
+167
+00:08:19,570 --> 00:08:22,690
+description reproduction condition and
+
+168
+00:08:22,690 --> 00:08:26,440
+so on and then there there is a pull
+
+169
+00:08:26,440 --> 00:08:28,480
+request feature which I just talked
+
+170
+00:08:28,480 --> 00:08:33,460
+about by showing that diagram then there
+
+171
+00:08:33,460 --> 00:08:35,440
+is a wiki so wiki is short of like a
+
+172
+00:08:35,440 --> 00:08:39,870
+documentation so for my code base
+
+173
+00:08:39,870 --> 00:08:44,230
+for this html5 boilerplate code base the
+
+174
+00:08:44,230 --> 00:08:46,510
+owner of this repository has put all
+
+175
+00:08:46,510 --> 00:08:49,570
+this nice documentation so you can click
+
+176
+00:08:49,570 --> 00:08:49,900
+through
+
+177
+00:08:49,900 --> 00:08:52,470
+wait you can read through all the
+
+178
+00:08:52,470 --> 00:08:54,580
+documentation you can go to different
+
+179
+00:08:54,580 --> 00:08:59,290
+website etcetera ah there is a pulse and
+
+180
+00:08:59,290 --> 00:09:01,360
+graph feature which just shows you the
+
+181
+00:09:01,360 --> 00:09:03,850
+pulse on your project so basically
+
+182
+00:09:03,850 --> 00:09:06,490
+ongoing activity on your project so here
+
+183
+00:09:06,490 --> 00:09:09,790
+on this project I have some 0 mod
+
+184
+00:09:09,790 --> 00:09:12,970
+politicus 1 open pull request and so on
+
+185
+00:09:12,970 --> 00:09:16,150
+and one issue so it is sort of like your
+
+186
+00:09:16,150 --> 00:09:18,580
+dashboard and then there are graphs
+
+187
+00:09:18,580 --> 00:09:21,400
+which will show you different statistic
+
+188
+00:09:21,400 --> 00:09:23,230
+graph like contributors so these are the
+
+189
+00:09:23,230 --> 00:09:25,360
+people who are contributing activity to
+
+190
+00:09:25,360 --> 00:09:30,550
+this cool repo there are comments so on
+
+191
+00:09:30,550 --> 00:09:32,710
+this day there were nine commits so
+
+192
+00:09:32,710 --> 00:09:34,480
+there was highest amount of activity on
+
+193
+00:09:34,480 --> 00:09:38,380
+this particular day ah there is core
+
+194
+00:09:38,380 --> 00:09:41,770
+frequency Network member and so on so it
+
+195
+00:09:41,770 --> 00:09:44,620
+has all this nice useful feature but the
+
+196
+00:09:44,620 --> 00:09:46,690
+most important thing about github is
+
+197
+00:09:46,690 --> 00:09:50,100
+this whole website itself it's a nice
+
+198
+00:09:50,100 --> 00:09:53,710
+GUI graphical user interface that allows
+
+199
+00:09:53,710 --> 00:09:56,590
+you to see your core and of various
+
+200
+00:09:56,590 --> 00:09:59,890
+dimensions of various statistics on your
+
+201
+00:09:59,890 --> 00:10:04,690
+code ok so these were basically the four
+
+202
+00:10:04,690 --> 00:10:08,470
+other features that that were that there
+
+203
+00:10:08,470 --> 00:10:10,920
+are important features for using github
+
+204
+00:10:10,920 --> 00:10:15,430
+now there are some interesting facts
+
+205
+00:10:15,430 --> 00:10:19,300
+about github it is very popular nowadays
+
+206
+00:10:19,300 --> 00:10:23,260
+or there are 14 million users with 35
+
+207
+00:10:23,260 --> 00:10:26,790
+million code repositories some of the
+
+208
+00:10:26,790 --> 00:10:29,340
+popular open source projects such as
+
+209
+00:10:29,340 --> 00:10:33,850
+Linux kernel has been posted on github
+
+210
+00:10:33,850 --> 00:10:35,550
+so if you go to this link github.com
+
+211
+00:10:35,550 --> 00:10:39,160
+tour was less Linux you will see the
+
+212
+00:10:39,160 --> 00:10:43,090
+code for Linux there I would say let's
+
+213
+00:10:43,090 --> 00:10:48,870
+try this so let's go to github.com
+
+214
+00:10:49,139 --> 00:10:55,240
+tour was Linux and I'm having some
+
+215
+00:10:55,240 --> 00:11:00,430
+internet issue but it's eye graphics ok
+
+216
+00:11:00,430 --> 00:11:03,819
+so this is the code base for Linux so
+
+217
+00:11:03,819 --> 00:11:06,040
+you can actually see the Linux kernel
+
+218
+00:11:06,040 --> 00:11:09,639
+core base here and if you feel like you
+
+219
+00:11:09,639 --> 00:11:11,649
+want to contribute to this project then
+
+220
+00:11:11,649 --> 00:11:13,930
+you can click on this button and form
+
+221
+00:11:13,930 --> 00:11:16,809
+the repository and basically follow this
+
+222
+00:11:16,809 --> 00:11:19,389
+diagram to make code changes and when
+
+223
+00:11:19,389 --> 00:11:22,569
+you send back the pull request the owner
+
+224
+00:11:22,569 --> 00:11:25,449
+of that repository will give you your
+
+225
+00:11:25,449 --> 00:11:27,790
+code changes and it will possibly be
+
+226
+00:11:27,790 --> 00:11:31,870
+merged if things look ok so see it's so
+
+227
+00:11:31,870 --> 00:11:33,970
+powerful there is a Linux kernel and you
+
+228
+00:11:33,970 --> 00:11:36,699
+can now contribute to Linux kernel just
+
+229
+00:11:36,699 --> 00:11:40,839
+because of github ok so that is all
+
+230
+00:11:40,839 --> 00:11:44,040
+about github thank

@@ -1,0 +1,590 @@
+Git Tutorial 1: What is git / What is version control system?
+Link: https://youtu.be/xAAmje1H9YM?list=PLeo1K3hjS3usJuxZZUBdjAcilgfQHkRzW
+
+1
+00:00:00,640 --> 00:00:02,879
+hello friends welcome to code basics
+
+2
+00:00:02,879 --> 00:00:05,440
+coding tutorial in this tutorial we are
+
+3
+00:00:05,440 --> 00:00:07,600
+going to see what is git
+
+4
+00:00:07,600 --> 00:00:09,519
+when you ask this question to anyone the
+
+5
+00:00:09,519 --> 00:00:11,599
+usual answer you get is
+
+6
+00:00:11,599 --> 00:00:14,639
+git is a version control system
+
+7
+00:00:14,639 --> 00:00:15,599
+but hey
+
+8
+00:00:15,599 --> 00:00:19,039
+what is version control system
+
+9
+00:00:19,039 --> 00:00:20,880
+let's look at the problems that we
+
+10
+00:00:20,880 --> 00:00:22,880
+encounter when you don't use version
+
+11
+00:00:22,880 --> 00:00:25,519
+control system so let's say you have a
+
+12
+00:00:25,519 --> 00:00:27,439
+computer and you are writing code on
+
+13
+00:00:27,439 --> 00:00:30,160
+that computer so the code files are
+
+14
+00:00:30,160 --> 00:00:33,200
+saved locally on that computer's hard
+
+15
+00:00:33,200 --> 00:00:34,480
+disk
+
+16
+00:00:34,480 --> 00:00:37,200
+but what if your hard disk crashes or
+
+17
+00:00:37,200 --> 00:00:38,960
+your computer has
+
+18
+00:00:38,960 --> 00:00:40,719
+some kind of problem
+
+19
+00:00:40,719 --> 00:00:42,640
+in that case whatever code you have
+
+20
+00:00:42,640 --> 00:00:45,440
+written is lost
+
+21
+00:00:45,440 --> 00:00:47,840
+second problem is if multiple people
+
+22
+00:00:47,840 --> 00:00:50,079
+want to contribute to
+
+23
+00:00:50,079 --> 00:00:52,879
+that code then they cannot do it if it
+
+24
+00:00:52,879 --> 00:00:56,320
+is on one computer even if it is let's
+
+25
+00:00:56,320 --> 00:00:59,199
+say these two people have
+
+26
+00:00:59,199 --> 00:01:01,440
+their own computers and if they want to
+
+27
+00:01:01,440 --> 00:01:03,680
+work on the same code how do they do
+
+28
+00:01:03,680 --> 00:01:04,479
+that
+
+29
+00:01:04,479 --> 00:01:07,280
+they have to transfer files using a pen
+
+30
+00:01:07,280 --> 00:01:10,080
+drive from one computer to another and
+
+31
+00:01:10,080 --> 00:01:12,479
+they have to do code merge manually
+
+32
+00:01:12,479 --> 00:01:15,600
+which is quite cumbersome
+
+33
+00:01:15,600 --> 00:01:18,320
+third problem you have is there is no
+
+34
+00:01:18,320 --> 00:01:20,720
+tracking of versions so let's say you
+
+35
+00:01:20,720 --> 00:01:23,600
+have your code it is working fine and
+
+36
+00:01:23,600 --> 00:01:24,880
+you are
+
+37
+00:01:24,880 --> 00:01:26,960
+making one more enhancements or you are
+
+38
+00:01:26,960 --> 00:01:28,560
+fixing some bugs so you made some
+
+39
+00:01:28,560 --> 00:01:30,720
+changes and let's say it doesn't look
+
+40
+00:01:30,720 --> 00:01:33,680
+good so you want to go to previous good
+
+41
+00:01:33,680 --> 00:01:35,520
+version of your code
+
+42
+00:01:35,520 --> 00:01:36,640
+but
+
+43
+00:01:36,640 --> 00:01:39,600
+there is no way if you have your code on
+
+44
+00:01:39,600 --> 00:01:42,320
+your computer because the simple file
+
+45
+00:01:42,320 --> 00:01:44,399
+system doesn't give you
+
+46
+00:01:44,399 --> 00:01:46,320
+a version tracking
+
+47
+00:01:46,320 --> 00:01:49,360
+so you have all these different issues
+
+48
+00:01:49,360 --> 00:01:51,439
+especially when you're working on a
+
+49
+00:01:51,439 --> 00:01:53,920
+bigger code base or a sample project you
+
+50
+00:01:53,920 --> 00:01:56,159
+will encounter these issues again and
+
+51
+00:01:56,159 --> 00:01:58,240
+again
+
+52
+00:01:58,240 --> 00:02:00,880
+version control system solves all these
+
+53
+00:02:00,880 --> 00:02:02,799
+problems
+
+54
+00:02:02,799 --> 00:02:04,960
+let's look at all these problems one by
+
+55
+00:02:04,960 --> 00:02:06,960
+one and see how
+
+56
+00:02:06,960 --> 00:02:09,758
+vcs or version control system solves
+
+57
+00:02:09,758 --> 00:02:10,959
+these issues
+
+58
+00:02:10,959 --> 00:02:12,879
+so our first problem was hard disk
+
+59
+00:02:12,879 --> 00:02:14,720
+failure
+
+60
+00:02:14,720 --> 00:02:16,560
+inversion control system
+
+61
+00:02:16,560 --> 00:02:20,000
+the code is saved on cloud cloud is
+
+62
+00:02:20,000 --> 00:02:22,800
+basically some remote machine which is
+
+63
+00:02:22,800 --> 00:02:24,480
+much more stable than your local
+
+64
+00:02:24,480 --> 00:02:25,840
+computer
+
+65
+00:02:25,840 --> 00:02:28,319
+and it is guaranteed that you will never
+
+66
+00:02:28,319 --> 00:02:30,720
+lose your code from cloud
+
+67
+00:02:30,720 --> 00:02:33,280
+so you store your code on the cloud and
+
+68
+00:02:33,280 --> 00:02:35,519
+then you sync the files to your local
+
+69
+00:02:35,519 --> 00:02:36,560
+computer
+
+70
+00:02:36,560 --> 00:02:39,280
+that way if you have hardware problem or
+
+71
+00:02:39,280 --> 00:02:41,840
+some computer breakdown you can always
+
+72
+00:02:41,840 --> 00:02:44,720
+get your code back from the cloud
+
+73
+00:02:44,720 --> 00:02:47,760
+so problem number one fixed
+
+74
+00:02:47,760 --> 00:02:49,280
+problem number two
+
+75
+00:02:49,280 --> 00:02:51,519
+multiple people contributing to the same
+
+76
+00:02:51,519 --> 00:02:52,879
+code base
+
+77
+00:02:52,879 --> 00:02:54,000 Label - 77 - 02:52 ------------------------|
+again
+
+78
+00:02:54,000 --> 00:02:56,720
+you have your golden copy of your code
+
+79
+00:02:56,720 --> 00:02:59,120
+on the cloud so that
+
+80
+00:02:59,120 --> 00:03:01,519
+these two people can work on their
+
+81
+00:03:01,519 --> 00:03:03,280
+individual
+
+82
+00:03:03,280 --> 00:03:04,480
+computers
+
+83
+00:03:04,480 --> 00:03:06,879
+and then whenever they're ready
+
+84
+00:03:06,879 --> 00:03:09,440
+uh to push their changes they will push
+
+85
+00:03:09,440 --> 00:03:10,800
+it to a cloud
+
+86
+00:03:10,800 --> 00:03:12,640 Label - 86 - 03:10 ------------------------|
+now let's say if they're working on a
+
+87
+00:03:12,640 --> 00:03:14,560
+same function let's say here there is a
+
+88
+00:03:14,560 --> 00:03:15,519
+function
+
+89
+00:03:15,519 --> 00:03:18,239
+python function def sum and if they're
+
+90
+00:03:18,239 --> 00:03:20,080
+they both are making uh changes to the
+
+91
+00:03:20,080 --> 00:03:22,480 Label - 91 - 03:20 ------------------------|
+same function then there are merge tools
+
+92
+00:03:22,480 --> 00:03:24,879
+available which can help you resolve the
+
+93
+00:03:24,879 --> 00:03:28,159
+conflict so merging is pretty easy these
+
+94
+00:03:28,159 --> 00:03:30,799 Label - 94 - 03:28 ------------------------|
+two people can work on their own
+
+95
+00:03:30,799 --> 00:03:33,280
+without worrying about anything
+
+96
+00:03:33,280 --> 00:03:36,159 Label - 96 - 03:33 ------------------------|
+so it's it's very beautiful
+
+97
+00:03:36,159 --> 00:03:39,840
+how uh vcs solves these issues or of
+
+98
+00:03:39,840 --> 00:03:42,239
+collaboration
+
+99
+00:03:42,239 --> 00:03:44,959 Label - 99 - 03:42 ------------------------|
+problem number theo three was uh version
+
+100
+00:03:44,959 --> 00:03:47,040
+tracking
+
+101
+00:03:47,040 --> 00:03:50,560 Label - 101 - 03:47 ------------------------|
+in version control system uh you have
+
+102
+00:03:50,560 --> 00:03:52,159
+all of your
+
+103
+00:03:52,159 --> 00:03:54,560
+changes tracked down through different
+
+104
+00:03:54,560 --> 00:03:56,400 Label - 104 - 03:56 ------------------------|
+versions of the same file so let's say
+
+105
+00:03:56,400 --> 00:03:58,640
+you have this file called foo dot py
+
+106
+00:03:58,640 --> 00:04:00,799
+which has some
+
+107
+00:04:00,799 --> 00:04:03,120 Label - 107 - 04:03 ------------------------|Starting
+uh a function called sum
+
+108
+00:04:03,120 --> 00:04:05,040
+and let's say right now the function
+
+109
+00:04:05,040 --> 00:04:07,920
+looks like this it just returns a plus b
+
+110
+00:04:07,920 --> 00:04:10,000 Label - 110 - 04:07 ------------------------|
+but if you make some changes later on
+
+111
+00:04:10,000 --> 00:04:12,239 Label - 111 - 04:10 ------------------------|
+and if you save it it will be saved as
+
+112
+00:04:12,239 --> 00:04:14,640
+version number two i was number three
+
+113
+00:04:14,640 --> 00:04:17,600 Label - 113 - 04:14 ------------------------|
+and so on so at any given point of time
+
+114
+00:04:17,600 --> 00:04:19,918
+you feel like i i want to go back to the
+
+115
+00:04:19,918 --> 00:04:22,079
+previous old version which was working
+
+116
+00:04:22,079 --> 00:04:26,320
+okay you can do it very easily
+
+117
+00:04:26,639 --> 00:04:29,040 Label - 117 - 04:26 ------------------------|
+now there are different
+
+118
+00:04:29,040 --> 00:04:30,880
+version control systems available in the
+
+119
+00:04:30,880 --> 00:04:31,919
+market
+
+120
+00:04:31,919 --> 00:04:33,440 Label - 120 - 04:31 ------------------------|
+for example git
+
+121
+00:04:33,440 --> 00:04:37,199
+mercurial subversion etc
+
+122
+00:04:37,199 --> 00:04:40,639 Label - 122 - 04:37 ------------------------|
+but git is by far the best version
+
+123
+00:04:40,639 --> 00:04:42,800
+control system
+
+124
+00:04:42,800 --> 00:04:44,800
+i will tell you two reasons
+
+125
+00:04:44,800 --> 00:04:46,639
+number one is it is a distributed
+
+126
+00:04:46,639 --> 00:04:48,400
+version control system
+
+127
+00:04:48,400 --> 00:04:49,199
+where
+
+128
+00:04:49,199 --> 00:04:51,280
+the version history is maintained on
+
+129
+00:04:51,280 --> 00:04:52,880
+your local computer
+
+130
+00:04:52,880 --> 00:04:55,680
+as well as it is maintained on the cloud
+
+131
+00:04:55,680 --> 00:04:58,479 Label - 131 - 04:55 ------------------------|
+so let's say you are
+
+132
+00:04:58,479 --> 00:05:00,160
+in some area where you don't have
+
+133
+00:05:00,160 --> 00:05:02,400
+internet internet connection
+
+134
+00:05:02,400 --> 00:05:05,199
+you still have an ability to try
+
+135
+00:05:05,199 --> 00:05:07,919
+to track the versions
+
+136
+00:05:07,919 --> 00:05:09,680 Label - 136 - 05:07 ------------------------|
+uh and whenever you have intercon
+
+137
+00:05:09,680 --> 00:05:11,759
+internet connection you can sync it up
+
+138
+00:05:11,759 --> 00:05:15,600
+with your uh remote which is your
+
+139
+00:05:15,600 --> 00:05:17,840
+copy in the cloud
+
+140
+00:05:17,840 --> 00:05:20,960 Label - 140 - 05:17 ------------------------|
+the second biggest benefit of using it
+
+141
+00:05:20,960 --> 00:05:21,919
+is
+
+142
+00:05:21,919 --> 00:05:23,120
+github
+
+143
+00:05:23,120 --> 00:05:26,720
+the most popular website to host code is
+
+144
+00:05:26,720 --> 00:05:28,800
+powered by get
+
+145
+00:05:28,800 --> 00:05:30,800
+that was all about
+
+146
+00:05:30,800 --> 00:05:31,840
+git
+
+147
+00:05:31,840 --> 00:05:34,639
+thank you for watching

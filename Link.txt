@@ -1,0 +1,54 @@
+GIT FETCH REBASE
+Audacity
+Audacity Tutorial: Fixing Inconsistent Volume Levels
+https://youtu.be/a9rTQaW500I
+Normalizing Audio in Audacity
+https://youtu.be/oqhDvu7IbhU
+Audacity Lesson 6 - Increase and Decrease Volume
+https://youtu.be/ZLrgebtmIAs
+[Tutorial] Audacity for ACX - Remove breaths, mouth noises and meet ACX Requirements
+https://youtu.be/wnutKoBzmpA
+How to normalize audio in Audacity
+https://youtu.be/xLYh4YrkllM
+How to make your voice sound better in Audacity
+https://youtu.be/Ji0U70Lb6Ok
+5 STEPS to Improve Your VOICEOVER in Audacity
+https://youtu.be/Rj7sbBng-T8
+Creating a transcription file of your recording using Audacity's label track
+https://youtu.be/48iLvm5IDQs
+
+Flutter
+dbestech - Flutter Provider State Management App | Step by Step for Beginners Shopping Cart
+https://youtu.be/_my1IHfn0xk
+The Tech Brothers - Flutter Provider State Management Course
+https://www.youtube.com/playlist?list=PLFyjjoCMAPtzn7tFLRV3eny7G74LnlMRt
+
+Git Flow
+***Nick Chapsas - Getting started with branching workflows, Git Flow and GitHub Flow
+https://youtu.be/gW6dFpTMk8s
+Git, Gitflow and Pull Requests - {Pro}Coders Best Practice Series
+https://youtu.be/jFL228SfOmU
+StudyStream+ - Git Flow Part 1 - What is Git Flow
+https://youtu.be/6LhTe8Mz6jM
+The gitflow workflow - in less than 5 mins
+https://youtu.be/1SXpE08hvGs
+
+Adobe Premiere Pro
+01. Creating a Project in Premiere Pro CC 2020 ( Bangla )
+https://youtu.be/iVtHoO1cYVE
+Customize workspace in premiere pro Bangla tutorial
+https://youtu.be/V26vnPWEFW8
+How to go to previous or next marker in Adobe Premiere Pro 2020 | Premier Pro Dude
+https://youtu.be/91vdz7TQrPs
+How to mark a selected clip in Adobe Premiere Pro 2020 | Premier Pro Dude
+https://youtu.be/kZIle02hc4k
+How (and why) to Use Timeline Markers | Premiere Pro Tutorial
+https://youtu.be/LJGmv892HiE
+
+
+
+
+
+
+
+-
