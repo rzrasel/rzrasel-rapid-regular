@@ -1,0 +1,63 @@
+// Regular Git Command
+git init
+git remote add origin [remote-repository-url]
+git remote -v
+git fetch
+git checkout master
+
+// Git Flow Command
+git flow init
+git branch -a
+git push origin
+git push --set-upstream origin development
+--------------------------------Feature Branch Gitflow Tutorial
+git flow feature start gitflow-tutorial
+git branch -a
+--------------[(Add And Work In A File)]
+git add .
+git commit -m "Git Flow Feature Complete Rz Rasel"
+git flow feature finish gitflow-tutorial
+git branch -a
+ls
+git push origin
+--------------[(Watch Remote Git Account)]
+--------------------------------Release Branch 0.0.1
+git flow release start '0.0.1'
+git branch -a
+git push origin
+git push --set-upstream origin release/0.0.1
+--------------[(Add And Work In A File)]
+git add .
+git commit -m "Git Flow Release Fix Rz Rasel"
+git push origin
+git flow release finish '0.0.1'
+i
+esc
+:wq
+---- ---- ---- ----Tag
+i
+tag v-0.0.1
+esc
+:wq
+---- ---- ---- ----Merge Commit
+i
+esc
+:wq
+git branch -a
+ls
+git checkout master
+ls
+git push origin
+git tag -l
+
+
+
+
+
+
+
+
+
+
+
+-
