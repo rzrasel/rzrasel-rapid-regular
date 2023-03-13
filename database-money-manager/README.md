@@ -1,7 +1,8 @@
 ### Database Money Manager - Latest
 
 #### Database Money Manager - Latest (BRAC Bank)
-- [ ] Database Money Manager Ex v1.6.2 `2023-03-01` - `6,86,085.64` `-25,000.00` <kbd>BRAC_BANK</kbd> `6,61,085.64` ⇒ `(DIFF: -25,000.00)` <kbd>2023-03 01</kbd>
+- [ ] Database Money Manager Ex v1.6.2 `2023-03-14` - `6,61,085.64` `+30,903.74` <kbd>BRAC_BANK</kbd> `6,91,989.38` ⇒ `(DIFF: +30,903.74)` <kbd>2023-03 02</kbd>
+- [x] Database Money Manager Ex v1.6.2 `2023-03-01` - `6,86,085.64` `-25,000.00` <kbd>BRAC_BANK</kbd> `6,61,085.64` ⇒ `(DIFF: -25,000.00)` <kbd>2023-03 01</kbd>
 - [x] Database Money Manager Ex v1.6.2 `2023-02-26` - `6,91,885.64` `-5,800` <kbd>BRAC_BANK</kbd> `6,86,085.64` ⇒ `(DIFF: +35,014.89)` <kbd>2023-02 04</kbd>
 - [x] Database Money Manager Ex v1.6.2 `2023-02-19` - `6,93,385.64` `-1,500` <kbd>BRAC_BANK</kbd> `6,91,885.64` ⇒ `(DIFF: +40,814.89)` <kbd>2023-02 03</kbd>
 - [x] Database Money Manager Ex v1.6.2 `2023-02-16` - `6,90,785.64` `+2,600` <kbd>BRAC_BANK</kbd> `6,93,385.64` ⇒ `(DIFF: +42,314.89)` <kbd>2023-02 02</kbd>
