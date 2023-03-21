@@ -13,9 +13,34 @@
 - [x] Database Money Manager Ex v1.6.2 `2023-01-10` - `4,17,303.61` <kbd>BRAC_BANK</kbd> `6,95,215.86`
 
 #### Database Money Manager - Latest (NRBC Bank)
-- [ ] Database Money Manager Ex v1.6.2 `2023-02-02` - `5,48,072.13` <kbd>NRBC_BANK</kbd> `6,73,270.91` ⇒ `26,722.32`
+- [ ] Database Money Manager Ex v1.6.2 `2023-03-21` - `6,73,270.91` `+17,011.52` <kbd>BRAC_BANK</kbd> `6,90,282.43` ⇒ `(DIFF: +17,011.52)` <kbd>2023-03 01</kbd>
+- [x] Database Money Manager Ex v1.6.2 `2023-02-02` - `5,48,072.13` <kbd>NRBC_BANK</kbd> `6,73,270.91` ⇒ `26,722.32`
 - [x] Database Money Manager Ex v1.6.2 `2022-12-31` - `5,48,072.13` <kbd>NRBC_BANK</kbd> `6,44,220.80` ⇒ `Unknown`
 
+#### Database Money Manager - Monthly Turnover
+- Closing Balance (April - 2023)
+  - [ ] <kbd>BRAC_BANK</kbd>
+  - [ ] <kbd>NRBC_BANK</kbd>
+- Starting Balance (April - 2023)
+  - [ ] <kbd>BRAC_BANK</kbd>
+  - [ ] <kbd>NRBC_BANK</kbd>
+
+- Closing Balance (March - 2023)
+  - [ ] <kbd>BRAC_BANK</kbd>
+  - [ ] <kbd>NRBC_BANK</kbd>
+- Starting Balance (March - 2023)
+  - [ ] <kbd>BRAC_BANK</kbd> `6,86,085.64`
+  - [ ] <kbd>NRBC_BANK</kbd> `6,73,270.91`
+
+- Closing Balance (February - 2023) `Balance - +79,825.89`
+  - [x] <kbd>BRAC_BANK</kbd> `6,86,085.64`
+  - [x] <kbd>NRBC_BANK</kbd> `6,73,270.91`
+- Starting Balance (February - 2023)
+  - [x] <kbd>BRAC_BANK</kbd> `6,35,309.86`
+  - [x] <kbd>NRBC_BANK</kbd> `6,44,220.80`
+
+#### Database Money Manager - Annual Turnover (2023)
+- [] Starting Balance
 
 
 -
