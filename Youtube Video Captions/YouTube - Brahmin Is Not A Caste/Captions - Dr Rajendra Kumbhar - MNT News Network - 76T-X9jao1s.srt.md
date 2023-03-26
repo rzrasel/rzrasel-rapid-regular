@@ -1,3 +1,7 @@
+ब्राह्मण जाति नहीं है, वह अपने-आप में एक वैदिक धर्म है
+Brahmin is not a caste, it is a Vedic religion in itself
+https://youtu.be/76T-X9jao1s
+
 1
 00:00:00,000 --> 00:00:03,060
 कर दो (https://youtu.be/76T-X9jao1s)
